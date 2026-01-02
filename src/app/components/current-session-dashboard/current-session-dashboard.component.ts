@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { title } from 'process';
 
 @Component({
-  selector: 'app-current-session-dashboard',
-  standalone: true,
-  imports: [],
-  templateUrl: './current-session-dashboard.component.html',
-  styleUrl: './current-session-dashboard.component.scss'
+    selector: 'app-current-session-dashboard',
+    standalone: true,
+    imports: [],
+    templateUrl: './current-session-dashboard.component.html',
+    styleUrl: './current-session-dashboard.component.scss'
 })
 export class CurrentSessionDashboardComponent {
   

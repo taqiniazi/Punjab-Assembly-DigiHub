@@ -1,10 +1,8 @@
-import { bootstrapApplication } from '@angular/platform-browser';
+import { bootstrapApplication, BootstrapContext } from '@angular/platform-browser';
 import { AppComponent } from './app/app.component';
-import { provideRouter } from '@angular/router';
-import { routes } from './app/app.routes';
+import { config } from './app/app.config.server';
 
-bootstrapApplication(AppComponent, {
-  providers: [
-    provideRouter(routes)
-  ]
-}).catch(err => console.error(err));
+const bootstrap = (context: BootstrapContext) => 
+  bootstrapApplication(AppComponent, config, context);
+
+export default bootstrap;

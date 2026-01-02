@@ -1,10 +1,11 @@
 import { Component, inject } from '@angular/core';
 import { Router } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-legislativ-login',
   standalone: true,
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './legislativ-login.component.html',
   styleUrl: './legislativ-login.component.scss'
 })
@@ -13,23 +14,30 @@ export class LegislativLoginComponent {
   logo = './assets/images/logo.png';
   assebmle_pic = './assets/images/assembly_pic.png';
   pitb_logo = './assets/images/pitb_logo.png';
+  
+  // Inject Router service
   private router = inject(Router);
-  onLogin(event?: Event) {
+  
+  onLogin(event?: Event): void {
     console.log('Login method triggered - navigating to legislative dashboard');
     
     // Prevent default form submission behavior
-    event?.preventDefault();
+    if (event) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
     
-    // Navigate to the correct route path
+    // Navigate to legislative dashboard
     this.router.navigate(['/legislative-dashboard']).then(
-      (success) => {
-        console.log('Navigation successful:', success);
-        if (!success) {
-          console.error('Navigation returned false - route may not exist or navigation was cancelled');
+      (success: boolean) => {
+        if (success) {
+          console.log('Navigation to legislative dashboard successful');
+        } else {
+          console.error('Navigation failed - route may not exist');
         }
       }
-    ).catch((error) => {
-      console.error('Navigation failed with error:', error);
+    ).catch((error: any) => {
+      console.error('Navigation error:', error);
     });
   }
 }

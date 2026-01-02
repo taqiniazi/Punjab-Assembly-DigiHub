@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-previous-proceedings',
-  standalone: true,
-  imports: [],
-  templateUrl: './previous-proceedings.component.html',
-  styleUrl: './previous-proceedings.component.scss'
+    selector: 'app-previous-proceedings',
+    imports: [],
+    templateUrl: './previous-proceedings.component.html',
+    styleUrl: './previous-proceedings.component.scss'
 })
 export class PreviousProceedingsComponent {
   pageTitle = "Previous Proceedings";

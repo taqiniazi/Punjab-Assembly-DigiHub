@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-question-login',
-  standalone: true,
-  imports: [],
-  templateUrl: './question-login.component.html',
-  styleUrl: './question-login.component.scss'
+    selector: 'app-question-login',
+    imports: [],
+    templateUrl: './question-login.component.html',
+    styleUrl: './question-login.component.scss'
 })
 export class QuestionLoginComponent {
   title = 'Punjab Assembly Portal';

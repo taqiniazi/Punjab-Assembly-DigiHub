@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-member-assembly-dashboard',
-  standalone: true,
-  imports: [],
-  templateUrl: './member-assembly-dashboard.component.html',
-  styleUrl: './member-assembly-dashboard.component.scss'
+    selector: 'app-member-assembly-dashboard',
+    standalone: true,
+    imports: [],
+    templateUrl: './member-assembly-dashboard.component.html',
+    styleUrl: './member-assembly-dashboard.component.scss'
 })
 export class MemberAssemblyDashboardComponent {
   pageTitle = "Member Assembly Dashboard";
