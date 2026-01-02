@@ -15,19 +15,16 @@ export class LegislativLoginComponent {
   assebmle_pic = './assets/images/assembly_pic.png';
   pitb_logo = './assets/images/pitb_logo.png';
   
-  // Inject Router service
   private router = inject(Router);
   
   onLogin(event?: Event): void {
     console.log('Login method triggered - navigating to legislative dashboard');
     
-    // Prevent default form submission behavior
     if (event) {
       event.preventDefault();
       event.stopPropagation();
     }
     
-    // Navigate to legislative dashboard
     this.router.navigate(['/legislative-dashboard']).then(
       (success: boolean) => {
         if (success) {

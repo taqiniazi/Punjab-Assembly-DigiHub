@@ -20,6 +20,7 @@ a{
 }
 .content-wrapper {
   min-height: 100vh;
+  margin-bottom:30px
 }
 .top-bar {
     padding: 10px 0;
@@ -204,22 +205,7 @@ img.assembly-top {
   grid-template-columns: repeat(5, 1fr);
   gap: 16px;
 }
-@media (max-width: 1280px) {
-    .dashboard-grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-@media (max-width: 992px) {
-    .dashboard-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
 
-@media (max-width: 576px) {
-    .dashboard-grid {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
 .login-card {
     width: 100%;
     max-width: 450px;
@@ -235,7 +221,9 @@ img.assembly-top {
     font-size: 1rem;
     border: none; /* Remove default border */
   }
-
+.pitb-logo{
+  width: 100%;
+}
   .login-btn {
     background-color: #004738; /* Dark green from image */
     border: none;
@@ -245,3 +233,36 @@ img.assembly-top {
   .login-btn:hover {
     background-color: #004a32; /* Slightly darker on hover */
   }
+
+@media (max-width: 1280px) {
+  .dashboard-grid {
+      grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 992px) {
+  .dashboard-grid {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .dashboard-grid {
+      grid-template-columns: repeat(1, 1fr);
+  }
+  .main-footer{
+    position: static;
+  }
+  .pitb-logo {
+    font-size: 13px;
+    text-align: center;
+  }
+  .logo-card{
+    margin-top:30px;
+  }
+  .page-title{
+    font-size: 16px;
+  }
+  .back-btn {
+      font-size: 14px;
+  }
+}

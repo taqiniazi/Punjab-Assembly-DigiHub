@@ -1,7 +1,6 @@
 import { Routes } from '@angular/router';
 import { LandingComponent } from './pages/landing/landing.component';
 import { LegislativLoginComponent } from './components/legislativ-login/legislativ-login.component';
-import { DocumentLoginComponent } from './components/document-login/document-login.component';
 import { MainLayoutComponent } from './layouts/main-layout/main-layout.component';
 import { LegislativeBranchDashboardComponent } from './components/legislativ-login/legislative-branch-dashboard/legislative-branch-dashboard.component';
 
