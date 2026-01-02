@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Overlock+SC&display=swap');
+.dashboard-card-big{
+    height: 200px;
+    .label{
+        font-size: 20px;
+    }
+}
+.btn_custom_agenda{
+    border-radius: 20px;
+    color: white;
+    border: none;
+    &:hover{
+        color: #fff;
+        .icon-circle {
+            transform: translateX(3px);
+        }   
+    }
+}
+.present_agenda{
+    font-family: "Overlock SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+}
+.agendaTicker li {
+    border-right: 1px solid #fff;
+    padding: 0 30px;
+    border-radius: 1px;
+    &:last-child {
+        border-right: none;
+    }
+}
+.btn-custom-green {
+    @extend .btn_custom_agenda;
+    background-color: #1f6b49;
+    &:hover{ 
+        background-color: #165236; 
+    }
+}
+
+.btn-custom-blue {
+     @extend .btn_custom_agenda;
+    background-color: #1f5c87; 
+    &:hover{ 
+        background-color: #164261; 
+    }
+}
+
+.icon-circle {
+    transition: transform 0.2s;
+}
