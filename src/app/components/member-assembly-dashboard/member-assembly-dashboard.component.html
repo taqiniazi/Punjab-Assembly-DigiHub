@@ -24,7 +24,7 @@
     <div class="row g-4 justify-content-center">
     @for (item of assembly_dashboard_cards; track $index) {
         <div class="col-md-4">
-          <div class="dashboard-card dashboard-card-big {{item.class}}">
+          <div class="dashboard-card dashboard-card-big {{item.class}}" (click)="openModal(item)" data-bs-toggle="modal" data-bs-target="#imageModal">
             <div class="icon mb-3">
               <img [src]="item.icon" alt="{{item.title}}">
             </div>
@@ -33,6 +33,37 @@
         </div>
     }
       
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="imageModalLabel">Image Gallery</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div id="imageCarousel" class="carousel slide" data-bs-interval="false">
+            <div class="carousel-inner">
+              @for (image of selectedImages; track $index) {
+                <div class="carousel-item" [class.active]="$index === 0">
+                  <img [src]="image" class="d-block w-100" alt="Slide {{$index + 1}}">
+                </div>
+              }
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
