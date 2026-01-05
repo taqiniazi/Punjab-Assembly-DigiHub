@@ -17,6 +17,7 @@ export const routes: Routes = [
     path: 'legislative-branch-login',
     loadComponent: () => import('./components/legislativ-login/legislativ-login.component').then(m => m.LegislativLoginComponent)
   },
+  
   {
     path: 'member-assembly-dashboard',
     loadComponent: () => import('./layouts/main-layout/main-layout.component').then(m => m.MainLayoutComponent),
@@ -34,6 +35,16 @@ export const routes: Routes = [
       {
         path: '',
         loadComponent: () => import('./components/current-session-dashboard/current-session-dashboard.component').then(m => m.CurrentSessionDashboardComponent)
+      }
+    ]
+  },
+  {
+    path: 'today-agenda',
+    loadComponent: () => import('./layouts/main-layout/main-layout.component').then(m => m.MainLayoutComponent),
+    children: [
+      {
+        path: '',
+        loadComponent: () => import('./components/current-session-dashboard/today-agenda/today-agenda.component').then(m => m.TodayAgendaComponent)
       }
     ]
   },

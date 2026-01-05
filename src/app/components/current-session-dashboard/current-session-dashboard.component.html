@@ -22,7 +22,7 @@
     <div class="row g-4 justify-content-center">
     @for (item of current_session_data; track $index) {
         <div class="col-md-3 mb-3">
-          <div class="dashboard-card dashboard-card-big {{item.class}}">
+          <div class="dashboard-card dashboard-card-big {{item.class}}" [routerLink]="item.route">
             <div class="icon mb-3"><img [src]="item.icon" alt="{{item.title}}" /></div>
             <div class="label">{{item.title}}</div>
           </div>
