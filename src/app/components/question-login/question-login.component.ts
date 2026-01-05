@@ -1,11 +1,11 @@
 import { Component, inject } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
 @Component({
     selector: 'app-question-login',
     standalone: true,
-    imports: [FormsModule],
+    imports: [FormsModule, RouterLink],
     templateUrl: './question-login.component.html',
     styleUrl: './question-login.component.scss'
 })

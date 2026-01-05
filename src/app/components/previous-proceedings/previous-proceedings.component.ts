@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { RouterLink } from "@angular/router";
 
 @Component({
     selector: 'app-previous-proceedings',
-    imports: [],
+    imports: [RouterLink],
     templateUrl: './previous-proceedings.component.html',
     styleUrl: './previous-proceedings.component.scss'
 })

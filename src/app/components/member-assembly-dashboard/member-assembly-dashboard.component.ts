@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
     selector: 'app-member-assembly-dashboard',
     standalone: true,
-    imports: [],
+    imports: [RouterLink],
     templateUrl: './member-assembly-dashboard.component.html',
     styleUrl: './member-assembly-dashboard.component.scss'
 })

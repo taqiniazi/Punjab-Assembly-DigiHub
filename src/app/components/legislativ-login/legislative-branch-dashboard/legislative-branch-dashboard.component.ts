@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
     selector: 'app-legislative-branch-dashboard',
     standalone: true,
-    imports: [],
+    imports: [RouterLink],
     templateUrl: './legislative-branch-dashboard.component.html',
     styleUrl: './legislative-branch-dashboard.component.scss'
 })

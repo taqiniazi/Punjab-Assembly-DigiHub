@@ -266,3 +266,15 @@ img.assembly-top {
       font-size: 14px;
   }
 }
+.carousel-inner {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    .carousel-item {
+        max-width: 80%;
+        margin: 0 auto;
+        @media screen and (max-width: 768px) {
+          max-width: 90%;
+        }
+    }
+}

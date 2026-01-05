@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
     selector: 'app-question-branch-dashboard',
     standalone: true,
-    imports: [],
+    imports: [RouterLink],
     templateUrl: './question-branch-dashboard.component.html',
     styleUrl: './question-branch-dashboard.component.scss'
 })
