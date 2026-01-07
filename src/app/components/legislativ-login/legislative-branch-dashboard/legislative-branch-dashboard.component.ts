@@ -15,11 +15,13 @@ export class LegislativeBranchDashboardComponent {
   notificationsIcon = './assets/images/notification2.svg';
   settingsIcon = './assets/images/settings.svg';
   legislative_dashboard_data = [
-    {title: "Upload Question Doc", icon: this.totalAgendaIcon , class : "single_color_agenda"},
-    {title: "Verbatim Debates", icon: this.chairpersonIcon , class : "single_color_notice"},
-    {title: "Upload Session Doc", icon: this.notificationsIcon, class : "single_color_session_documents"},
-    {title: "Zero hour", icon: this.settingsIcon, class : "single_color_resolution"},
-    {title: "Calling Attention", icon: this.settingsIcon, class : "single_color_print_order"}
+    {title: "Agenda", icon: this.totalAgendaIcon , class : "single_color_agenda"},
+    {title: "Privilege Motions ", icon: this.chairpersonIcon , class : "single_color_notice"},
+    {title: "Adjournment Motions", icon: this.notificationsIcon, class : "single_color_session_documents"},
+    {title: "Bills", icon: this.settingsIcon, class : "single_color_resolution"},
+    {title: "Ordinances", icon: this.settingsIcon, class : "single_color_print_order"},
+    {title: "Resolutions", icon: this.totalAgendaIcon, class : "single_color_legislative_bill"},
+    {title: "Other motions", icon: this.chairpersonIcon, class : "single_color_other_motions"}
   ];
   
 }
