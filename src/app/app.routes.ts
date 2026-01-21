@@ -49,6 +49,16 @@ export const routes: Routes = [
     ]
   },
   {
+    path: 'agenda-details',
+    loadComponent: () => import('./layouts/main-layout/main-layout.component').then(m => m.MainLayoutComponent),
+    children: [
+      {
+        path: '',
+        loadComponent: () => import('./components/documents-page/agenda-details/agenda-details.component').then(m => m.AgendaDetailsComponent)
+      }
+    ]
+  },
+  {
     path: 'documents-page',
     loadComponent: () => import('./layouts/main-layout/main-layout.component').then(m => m.MainLayoutComponent),
     children: [

@@ -1,0 +1,50 @@
+.custom-tab-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border: none;
+    .nav-pills-custom {
+        background-color: #f8f9fa;
+        border-radius: 10px;
+        padding: 6px;
+        display: inline-flex;
+        width: 100%;
+        .nav-link {
+            color: #6c757d;
+            font-weight: 600;
+            font-size: 0.95rem;
+            border-radius: 8px;
+            padding: 12px 20px;
+            transition: all 0.3s ease;
+            border: none;
+            i {
+                margin-right: 8px;
+                font-size: 1.1em;
+            }
+            &:hover {
+                color: #495057;
+                background-color: rgba(0, 0, 0, 0.03);
+            }
+            &.active {
+                color: #4f46e5;
+                background-color: #fff; 
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+            }
+        }
+    }
+
+    .tab-content {
+        padding: 20px 10px;
+
+        h4 {
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        p {
+            color: #666;
+            line-height: 1.6;
+        }
+    }
+}

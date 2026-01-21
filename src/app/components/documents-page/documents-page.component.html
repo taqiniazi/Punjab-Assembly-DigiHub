@@ -22,7 +22,7 @@
     <div class="row g-4 justify-content-center">
        <div class="dashboard-grid">
         @for (item of document_page_data; track $index) {
-            <div class="dashboard-card {{ item.class }}">
+            <div class="dashboard-card {{ item.class }}"  [routerLink]="item.route">
             <div class="icon mb-3">
                 <img [src]="item.icon" alt="{{ item.title }}" />
             </div>
