@@ -3,13 +3,61 @@
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
 @import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css');
-
+@font-face {
+    font-family: 'Urdu-Font';
+    src: url('./assets/fonts/Jameel_Noori_Nastaleeq_Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
 body{
     background: url(./assets/images/bg.png) no-repeat;
     background-size: cover;
 }
 /* pap-digihub.component.css */
-
+.urdu_content{
+    font-family: 'Urdu-Font', sans-serif;
+    direction: rtl;
+    *{
+      font-size: 24px;
+      font-family: 'Urdu-Font', sans-serif;
+    }
+    h1{
+      font-size: 48px;
+      line-height: 1.5;
+    }
+    h2{
+      font-size: 36px;
+      line-height: 1.5;
+    }
+    h3{
+      font-size: 28px;
+      line-height: 1.5;
+    }
+    .text-eng{
+      *{
+        font-size: 16px;
+        font-family: 'Poppins', sans-serif;
+      }
+    }
+}
+.pannj-bill{
+  font-size: 16px;
+  padding-left: 25px;
+  li{
+    margin-bottom: 20px;
+    .name{
+      font-weight: 600;
+      max-width: 220px;
+      // margin-right:20px
+    }
+  }
+}
+.hide{
+  display: none;
+}
+.show{
+  display: block
+}
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 * {

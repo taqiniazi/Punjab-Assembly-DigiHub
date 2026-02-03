@@ -22,35 +22,35 @@
         <ul class="nav nav-pills nav-pills-custom nav-justified sticky-md-top" id="pills-tab" role="tablist">
             <li class="nav-item" role="presentation">
                 <button class="nav-link active" id="pills-notice-tab" data-bs-toggle="pill" data-bs-target="#pills-notice" type="button" role="tab" aria-selected="true">
-                        Notices
+                        Sessions
                 </button>
             </li>
             <li class="nav-item" role="presentation">
                 <button class="nav-link" id="pills-session-document-tab" data-bs-toggle="pill" data-bs-target="#pills-session-document" type="button" role="tab" aria-selected="false">
-                        Session Documents
+                        Sittings
                 </button>
             </li>
             <li class="nav-item" role="presentation">
                 <button class="nav-link" id="pills-print-order-tab" data-bs-toggle="pill" data-bs-target="#pills-print-order" type="button" role="tab" aria-selected="false">
-                        Print of Order
+                        Present Agenda
                 </button>
             </li>
             <li class="nav-item" role="presentation">
                 <button class="nav-link" id="pills-legislative-bill-tab" data-bs-toggle="pill" data-bs-target="#pills-legislative-bill" type="button" role="tab" aria-selected="false">
-                        Legislative Bill
+                        Adjournment Motions
                 </button>
             </li>
             <li class="nav-item" role="presentation">
                 <button class="nav-link" id="pills-question-document-tab" data-bs-toggle="pill" data-bs-target="#pills-question-document" type="button" role="tab" aria-selected="false">
-                        Question Documents
+                        Resolution / Extension of Ordinance
                 </button>
             </li>
             <li class="nav-item" role="presentation">
                 <button class="nav-link" id="pills-previous-proceedings-tab" data-bs-toggle="pill" data-bs-target="#pills-previous-proceedings" type="button" role="tab" aria-selected="false">
-                        Previous Proceedings
+                        Legislation Documents
                 </button>
             </li>
-            <li class="nav-item" role="presentation">
+            <!-- <li class="nav-item" role="presentation">
                 <button class="nav-link" id="pills-zero-hour-tab" data-bs-toggle="pill" data-bs-target="#pills-zero-hour" type="button" role="tab" aria-selected="false">
                         Zero Hour
                 </button>
@@ -59,54 +59,229 @@
                 <button class="nav-link" id="pills-call-attention-tab" data-bs-toggle="pill" data-bs-target="#pills-call-attention" type="button" role="tab" aria-selected="false">
                         Calling Attention
                 </button>
-            </li>
+            </li> -->
 
         </ul>
 
         <div class="tab-content" id="pills-tabContent">
             
             <div class="tab-pane fade show active" id="pills-notice" role="tabpanel">
-                <h4>Welcome Back</h4>
-                <p>This is a modern implementation of Bootstrap 5 tabs. Notice the soft shadow on the active tab item that makes it pop out from the background. This "neumorphic" or "floating" style is very popular in current dashboard designs.</p>
-                <button class="btn btn-primary rounded-pill px-4">Get Started</button>
+                <h4>Session</h4>
+                <form action="" class="row form mb-3">
+                    <div class="col-md-4 mb-3">
+                        <label for="sessionNo" class="form-label">Session No</label>
+                        <input type="text" class="form-control" id="sessionNo" placeholder="Enter session no">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="sessionDate" class="form-label">Session Date</label>
+                        <input type="date" class="form-control" id="sessionDate" placeholder="Enter session date">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="sessionTime" class="form-label">Session Time</label>
+                        <input type="time" class="form-control" id="sessionTime" placeholder="Enter session time">
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <label for="sessionDetails" class="form-label">Session Details</label>
+                        <textarea class="form-control" id="sessionDetails" rows="4" placeholder="Enter session details"></textarea>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+                <div class="row mx-0">
+                    <div class="card">
+                        <div class="card-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Session No.</th>
+                                    <th>Session Date</th>
+                                    <th>Session Time</th>
+                                    <th>Description</th>
+                                    <th class="text-end">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2024-01-01</td>
+                                    <td>10:00 AM</td>
+                                    <td>Initial meeting discussion</td>
+                                    <td class="text-end">
+                                        <button class="btn btn-sm btn-outline-primary me-2">Edit</button>
+                                        <button class="btn btn-sm btn-outline-danger">Delete</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>2024-01-02</td>
+                                    <td>10:00 AM</td>
+                                    <td>Initial meeting discussion</td>
+                                    <td class="text-end">
+                                        <button class="btn btn-sm btn-outline-primary me-2">Edit</button>
+                                        <button class="btn btn-sm btn-outline-danger">Delete</button>
+                                    </td>
+                                </tr>
+                                
+                               
+                            </tbody>
+                        </table>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="tab-pane fade" id="pills-session-document" role="tabpanel">
-                <div class="d-flex align-items-center mb-3">
-                    <img src="https://via.placeholder.com/60" class="rounded-circle me-3" alt="User">
-                    <div>
-                        <h5 class="mb-0">John Doe</h5>
-                        <small class="text-muted">Software Engineer</small>
+                <h4>Sittings</h4>
+                <form action="" class="row form mb-3">
+                    <div class="col-md-3 mb-3">
+                        <label for="sessionNo" class="form-label">Session</label>
+                        <select name="" id="" class="form-select">
+                            <option value="">Session 1</option>
+                            <option value="">Session 2</option>
+                            <option value="">Session 3</option>
+                            <option value="">Session 4</option>
+                            <option value="">Session 5</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="sessionDate" class="form-label">Date</label>
+                        <input type="date" class="form-control" id="sessionDate" placeholder="Enter session date">
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="sessionTime" class="form-label">Time</label>
+                        <input type="time" class="form-control" id="sessionTime" placeholder="Enter session time">
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="SittingNo" class="form-label">Sitting No.</label>
+                        <input type="text" class="form-control" id="SittingNo" placeholder="Enter sitting number">
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <input type="checkbox" class="form-check-input" id="SittingActive" checked>
+                        <label for="SittingActive" class="form-label ms-2">Active</label>
+                    </div>
+                    
+                    <div class="col-12 text-center">
+                        <button type="submit" class="btn btn-outline-dark me-3">Reset</button>
+                        <button type="submit" class="btn btn-primary">Create</button>
+                    </div>
+                </form>
+
+                <div class="row mx-0">
+                    <div class="card">
+                        <div class="card-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Sitting Date</th>
+                                    <th>Sitting Time</th>
+                                    <th>Sitting No.</th>
+                                    <th>Active</th>
+                                    <th class="text-end">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2024-01-01</td>
+                                    <td>10:00 AM</td>
+                                    <td>1</td>
+                                    <td><span class="badge bg-primary">Yes </span></td>
+                                    <td class="text-end">
+                                        <button class="btn btn-sm btn-outline-primary me-2">Edit</button>
+                                        <button class="btn btn-sm btn-outline-danger">Delete</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>2024-01-02</td>
+                                    <td>10:00 AM</td>
+                                    <td>2</td>
+                                    <td><span class="badge bg-danger">No</span></td>
+                                    <td class="text-end">
+                                        <button class="btn btn-sm btn-outline-primary me-2">Edit</button>
+                                        <button class="btn btn-sm btn-outline-danger">Delete</button>
+                                    </td>
+                                </tr>                               
+                               
+                            </tbody>
+                        </table>
+                        </div>
                     </div>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, veritatis culpa? Rem, velit possimus ducimus obcaecati quam mollitia deleniti accusantium ex, ipsam, nihil corrupti! Architecto illum voluptate earum sint optio.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, veritatis culpa? Rem, velit possimus ducimus obcaecati quam mollitia deleniti accusantium ex, ipsam, nihil corrupti! Architecto illum voluptate earum sint optio.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, veritatis culpa? Rem, velit possimus ducimus obcaecati quam mollitia deleniti accusantium ex, ipsam, nihil corrupti! Architecto illum voluptate earum sint optio.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, veritatis culpa? Rem, velit possimus ducimus obcaecati quam mollitia deleniti accusantium ex, ipsam, nihil corrupti! Architecto illum voluptate earum sint optio.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, veritatis culpa? Rem, velit possimus ducimus obcaecati quam mollitia deleniti accusantium ex, ipsam, nihil corrupti! Architecto illum voluptate earum sint optio.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, veritatis culpa? Rem, velit possimus ducimus obcaecati quam mollitia deleniti accusantium ex, ipsam, nihil corrupti! Architecto illum voluptate earum sint optio.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, veritatis culpa? Rem, velit possimus ducimus obcaecati quam mollitia deleniti accusantium ex, ipsam, nihil corrupti! Architecto illum voluptate earum sint optio.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, veritatis culpa? Rem, velit possimus ducimus obcaecati quam mollitia deleniti accusantium ex, ipsam, nihil corrupti! Architecto illum voluptate earum sint optio.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, veritatis culpa? Rem, velit possimus ducimus obcaecati quam mollitia deleniti accusantium ex, ipsam, nihil corrupti! Architecto illum voluptate earum sint optio.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, veritatis culpa? Rem, velit possimus ducimus obcaecati quam mollitia deleniti accusantium ex, ipsam, nihil corrupti! Architecto illum voluptate earum sint optio.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, veritatis culpa? Rem, velit possimus ducimus obcaecati quam mollitia deleniti accusantium ex, ipsam, nihil corrupti! Architecto illum voluptate earum sint optio.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, veritatis culpa? Rem, velit possimus ducimus obcaecati quam mollitia deleniti accusantium ex, ipsam, nihil corrupti! Architecto illum voluptate earum sint optio.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, veritatis culpa? Rem, velit possimus ducimus obcaecati quam mollitia deleniti accusantium ex, ipsam, nihil corrupti! Architecto illum voluptate earum sint optio.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, veritatis culpa? Rem, velit possimus ducimus obcaecati quam mollitia deleniti accusantium ex, ipsam, nihil corrupti! Architecto illum voluptate earum sint optio.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, veritatis culpa? Rem, velit possimus ducimus obcaecati quam mollitia deleniti accusantium ex, ipsam, nihil corrupti! Architecto illum voluptate earum sint optio.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, veritatis culpa? Rem, velit possimus ducimus obcaecati quam mollitia deleniti accusantium ex, ipsam, nihil corrupti! Architecto illum voluptate earum sint optio.</p>
              </div>
 
             <div class="tab-pane fade" id="pills-print-order" role="tabpanel">
-                <h4>Recent Messages</h4>
-                <div class="list-group list-group-flush">
-                    <a href="#" class="list-group-item list-group-item-action px-0 border-0">
-                        <div class="d-flex w-100 justify-content-between">
-                            <h6 class="mb-1">Project Update</h6>
-                            <small class="text-muted">3 days ago</small>
+                <h4>Present Agenda</h4>
+                 <form action="" class="row form mb-3">
+                    <div class="col-md-3 mb-3">
+                        <label for="sessionNo" class="form-label">Agenda Type</label>
+                        <select name="" id="" class="form-select">
+                            <option value="">Short Notice Questions</option>
+                            <option value="">Questions – (Department Name)</option>
+                            <option value="">Call attention Notices</option>
+                            <option value="">Zero Hour Notices</option>
+                            <option value="">Privileged Motions</option>
+                            <option value="">Adjournment Motions</option>
+                            <option value="">Resolutions [two types (Public, constitutional)]</option>
+                            <option value="">Resolution for Extension of ordinances under Article 144</option>
+                        </select>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <label for="sessionDetails" class="form-label">Agenda Details</label>
+                        <textarea class="form-control" id="sessionDetails" rows="4" placeholder="Enter agenda details"></textarea>
+                    </div>                    
+                    <div class="col-12 text-center">
+                        <button type="submit" class="btn btn-outline-dark me-3">Reset</button>
+                        <button type="submit" class="btn btn-primary">Create</button>
+                    </div>
+                </form>
+
+                <div class="row mx-0">
+                    <div class="card">
+                        <div class="card-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Agenda Type</th>
+                                    <th>Details</th>
+                                    <th>Active</th>
+                                    <th>Created At</th>
+                                    <th>Created By</th>
+                                    <th class="text-end">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Agenda Type</td>                              
+                                    <td>Agenda Details</td>
+                                    <td><span class="badge bg-primary">Yes</span></td>
+                                    <td>2024-01-01</td>
+                                    <td>Admin User</td>
+                                    <td class="text-end">
+                                        <button class="btn btn-sm btn-outline-primary me-2">Edit</button>
+                                        <button class="btn btn-sm btn-outline-danger">Delete</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Agenda Type</td>                              
+                                    <td>Agenda Details</td>
+                                    <td><span class="badge bg-primary">Yes</span></td>
+                                    <td>2024-01-02</td>
+                                    <td>Admin User</td>
+                                    <td class="text-end">
+                                        <button class="btn btn-sm btn-outline-primary me-2">Edit</button>
+                                        <button class="btn btn-sm btn-outline-danger">Delete</button>
+                                    </td>
+                               
+                            </tbody>
+                        </table>
                         </div>
-                        <small class="text-muted">The design team has uploaded the new assets...</small>
-                    </a>
+                    </div>
                 </div>
             </div>
 

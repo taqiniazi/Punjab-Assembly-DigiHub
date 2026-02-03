@@ -9,6 +9,12 @@ import { RouterLink } from '@angular/router';
   styleUrl: './today-agenda.component.scss'
 })
 export class TodayAgendaComponent {
+  isEnglish: boolean = true;
+
+  toggleLanguage(lang: string) {
+    this.isEnglish = lang === 'english';
+  }
+
   pu_assembly_logo = 'assets/images/pu_assembly_logo.png';
   table_data = [
     { sn: 1, amNo: '297/25', mover: 'Syed Ali Haider Gilani (H.I.), MPA PP-213', minister: 'School Education' },
